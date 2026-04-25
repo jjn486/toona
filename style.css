@@ -60,9 +60,15 @@ header {
     margin-bottom: 2rem;
 }
 
+.header-spacer {
+    width: 40px; /* Same as theme-toggle width to balance flexbox centering */
+}
+
 h1 {
     font-size: 1.5rem;
     font-weight: 700;
+    flex-grow: 1;
+    text-align: center;
 }
 
 .theme-toggle {
@@ -71,7 +77,8 @@ h1 {
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--text-color);
-    padding: 5px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -106,6 +113,7 @@ h1 {
     text-align: center;
     color: var(--text-muted);
     padding: 2rem 0;
+    line-height: 1.6;
 }
 
 .number-set {
@@ -126,21 +134,28 @@ h1 {
 .balls-row {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    align-items: center;
+    gap: 6px;
 }
 
 .ball {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: bold;
     color: #fff;
     text-shadow: 0 1px 2px rgba(0,0,0,0.2);
     box-shadow: inset -2px -2px 4px rgba(0,0,0,0.2), 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.bonus-plus {
+    font-weight: bold;
+    color: var(--text-muted);
+    margin: 0 2px;
 }
 
 /* Lotto Ball Colors */
@@ -167,13 +182,13 @@ h1 {
     color: #fff;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
     .ball {
-        width: 32px;
-        height: 32px;
-        font-size: 0.8rem;
+        width: 30px;
+        height: 30px;
+        font-size: 0.75rem;
     }
     .balls-row {
-        gap: 5px;
+        gap: 4px;
     }
 }
