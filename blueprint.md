@@ -6,8 +6,9 @@ This is a simple web application that generates lottery numbers. Users can click
 
 ## Design and Features
 
-*   **Dark Theme:** The application uses a dark background for a modern look.
-*   **Responsive Design:** The layout is mobile-first and adapts to different screen sizes.
+*   **Theme Toggle:** Supports both Dark and Light modes, with user preference persistence.
+*   **Modern Mobile UI:** Responsive design optimized for mobile, featuring a clean layout and interactive elements.
+*   **Visual Enhancements:** Lottery numbers are displayed as stylish balls/circles with distinct colors.
 *   **Number Generation:**
     *   Generates 5 sets of lottery numbers per click.
     *   Each set contains 6 unique numbers from 1 to 45.
@@ -16,16 +17,15 @@ This is a simple web application that generates lottery numbers. Users can click
 
 ## Current Plan
 
-1.  **Update `index.html`:**
-    *   Set the page title and main heading.
-    *   Add a button to generate numbers.
-    *   Create a container for the number display area.
-    *   Include the initial placeholder text.
-2.  **Update `style.css`:**
-    *   Implement a dark, mobile-friendly theme.
-    *   Style the header, button, and number display area.
-    *   Use modern CSS for layout and visual effects.
-3.  **Update `main.js`:**
-    *   Implement the logic for generating unique lottery numbers.
-    *   Create a function to display the generated numbers and copy buttons.
-    *   Add event listeners for the generate and copy buttons.
+1.  **Implement Theme Support:**
+    *   Define CSS variables for color schemes in both light and dark modes.
+    *   Add a theme toggle switch (Sun/Moon icon) to the UI.
+    *   Use JavaScript to toggle themes and store the preference in `localStorage`.
+2.  **Enhance Mobile UI:**
+    *   Use a more compact and mobile-friendly layout for the number sets.
+    *   Style lottery numbers as circular "balls" for a more authentic look.
+    *   Improve spacing and typography for better readability on small screens.
+3.  **Code Updates:**
+    *   Update `style.css` with modern CSS features (variables, transitions, responsive layouts).
+    *   Update `index.html` to include the theme toggle and structural improvements.
+    *   Update `main.js` to handle theme logic and the new ball-based number display.
